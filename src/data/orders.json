@@ -1,0 +1,26 @@
+[
+  {
+    "name": "iPhone 13",
+    "price": 730000,
+    "qty": 1,
+    "date": "2023-07-30",
+    "status": "Pending",
+    "img": "iphone-img.png"
+  },
+  {
+    "name": "iPhone 13",
+    "price": 730000,
+    "qty": 1,
+    "date": "2023-07-30",
+    "status": "Completed",
+    "img": "iphone-img-2.png"
+  },
+  {
+    "name": "iPhone 13",
+    "price": 730000,
+    "qty": 1,
+    "date": "2023-07-30",
+    "status": "Pending",
+    "img": "iphone-img.png"
+  }
+]
