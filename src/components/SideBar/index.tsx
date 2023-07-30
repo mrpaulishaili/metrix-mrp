@@ -12,7 +12,7 @@ import {
 } from 'react-icons/pi';
 
 import { AiOutlineMessage } from 'react-icons/ai';
-import Badge from '../commons/badge';
+import Badge from '../commons/Badge';
 
 interface SideBarProps {}
 
