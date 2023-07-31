@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import { FaBeer } from 'react-icons/fa';
+import { FaBeer, FaChevronRight } from 'react-icons/fa';
 import { FiGift } from 'react-icons/fi';
 import { HiOutlineLogout } from 'react-icons/hi';
 import { IoSettingsOutline, IoPeopleOutline } from 'react-icons/io5';
@@ -11,6 +11,8 @@ import {
   PiHeadphones,
 } from 'react-icons/pi';
 
+import { RxDashboard } from 'react-icons/rx';
+
 import { AiOutlineMessage } from 'react-icons/ai';
 import Badge from '../commons/Badge';
 
@@ -18,10 +20,10 @@ interface SideBarProps {}
 
 const SideBar: FC<SideBarProps> = () => {
   return (
-    <aside className="w-full max-w-xs p-4 h-screen bg-white flex flex-col justify-between">
+    <aside className="w-full max-w-xs py-2 h-screen bg-white flex flex-col justify-between">
       <div className="">
         {/* Sidebar Logo */}
-        <div className="logo">
+        <div className="logo h-8 px-6">
           <img
             src="images/logo.png"
             height={30}
@@ -35,7 +37,7 @@ const SideBar: FC<SideBarProps> = () => {
         <ul>
           <li>
             <Link to={'/'}>
-              <FaBeer size={20} /> Dashboard
+              <RxDashboard size={18} /> Dashboard
             </Link>
           </li>
           <li>
@@ -72,17 +74,25 @@ const SideBar: FC<SideBarProps> = () => {
 
       <ul className="">
         <li>
-          <Link to={'/'}>
-            <PiHeadphones /> Contact Support
+          <Link to={'/'} className="bg-primary-blue-trans">
+            <PiHeadphones size={18} /> Contact Support
           </Link>
         </li>
         <li>
-          <Link to={'/'}>
-            <FiGift /> Upgrade your account
+          <Link
+            to={'/'}
+            className="bg-secondary-gold-20 flex-col gap-3 py-3 items-start"
+          >
+            <div className="flex justify-start text-sm items-center">
+              <FiGift size={18} /> Free Gift Awaits You!
+            </div>
+            <span className="text-xs flex items-center justify-between w-full">
+              Upgrade your account <FaChevronRight />
+            </span>
           </Link>
         </li>
         <li>
-          <Link to={'/'}>
+          <Link to={'/'} className="text-action-red">
             <HiOutlineLogout size={18} /> Logout
           </Link>
         </li>

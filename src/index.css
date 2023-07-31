@@ -33,7 +33,7 @@ aside ul {
   display: flex;
   width: 100%;
   flex-direction: column;
-  gap: 0.5rem;
+  gap: 0.25rem;
 }
 
 aside ul li {
@@ -42,14 +42,14 @@ aside ul li {
 }
 
 aside ul li a {
-  padding: 0.5rem 1rem;
+  padding: 0.8rem 1rem;
   display: flex;
-  align-items: center;
-  gap: 0.5rem;
+  gap: 0.2rem;
   width: 100%;
   transition: 0.3s ease-in-out background-color;
   border-radius: 0.5rem;
   background: transparent;
+  align-items: center;
 }
 
 aside ul li a:hover {
