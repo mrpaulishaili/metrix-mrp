@@ -4,7 +4,7 @@ import formatCurrency from '../../utils/formatCurrency';
 interface SectorSummaryProps {
   type?: 'price' | 'qty';
   name: string;
-  figure: string;
+  figure: string | number;
   percentage?: number;
 }
 
@@ -17,7 +17,7 @@ const SectorSummary: FC<SectorSummaryProps> = ({
   return (
     <div className="flex flex-col gap-3 font-Poppins ">
       <small className="text-xs text-black-20">{name}</small>
-      <p>
+      <p className="text-lg font-bold">
         {type == 'price'
           ? formatCurrency(Number(figure), 'NGN', 'en-NG')
           : figure}

@@ -1,7 +1,7 @@
 import { FC } from 'react';
 import { Link } from 'react-router-dom';
 
-import { FaBeer, FaChevronRight } from 'react-icons/fa';
+import { FaChevronRight } from 'react-icons/fa';
 import { FiGift } from 'react-icons/fi';
 import { HiOutlineLogout } from 'react-icons/hi';
 import { IoSettingsOutline, IoPeopleOutline } from 'react-icons/io5';
@@ -41,7 +41,7 @@ const SideBar: FC<SideBarProps> = () => {
             </Link>
           </li>
           <li>
-            <Link to={'/'}>
+            <Link to={'/orders'}>
               <PiHandbagLight size={18} /> Orders
             </Link>
           </li>
